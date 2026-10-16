@@ -45,7 +45,7 @@ Ya confirmamos que el producto con ID 44 está disponible en el almacén; ahora,
 Descarga la tabla de productos:
 
 
-  1. Ingresa la URL de tu servidor (https://urban-grocers-auth.up.railway.app) en la barra de direcciones de Google Chrome y agrega /api/db/resources/product_model.csv Esto descargará el contenido de la tabla product_model, que contiene la lista de todos los productos del sistema.
+  1. Ingresa la URL de tu servidor (https://urban-grocers-auth.up.railway.app) en la barra de direcciones de Google Chrome y agrega /api/db/resources/product_model.csvEsto descargará el contenido de la tabla product_model, que contiene la lista de todos los productos del sistema.
 
   2. Presiona Enter.
 
@@ -73,14 +73,14 @@ Vamos a reutilizar nuestra solicitud Crear paquete de despensa usando un token d
 3. Agrega el producto 44 :
 
    * Envía una solicitud POST a /api/v1/grocery-bundles/{id}/products, donde {id} es el ID de tu nuevo paquete de despensa con el cuerpo
-   {
+  {
   "productsList": [
   {
   "productId": 44,
   "quantity": 1
   }
   ]
-  } 
+  }
  
    *  Asegúrate de agregar el mismo token que ya obtuvimos.
 
